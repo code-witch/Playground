@@ -1,0 +1,21 @@
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#main-canvas {
+    border: black 2px solid;
+    width: 500px;
+    height: 500px;
+}
+#container {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+#editor {
+    width: 300px;
+    height: 400px;
+}
