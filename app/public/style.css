@@ -1,21 +1,26 @@
-
 body {
-    display: flex;
     margin: 0;
     padding: 0;
 }
-
 #main-canvas {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
     border: black 2px solid;
-    width: 500px;
-    height: 500px;
+    width: 650px;
+    height: 700px;
 }
 #container {
-    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
     width: auto;
     height: auto;
 }
 #editor {
-    width: 300px;
-    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 650px;
+    height: 700px;
 }
