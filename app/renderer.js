@@ -1,5 +1,6 @@
 const loader = require('monaco-loader');
-const canvas = document.getElementById('main-canvas')
+// const canvas = document.getElementById('main-canvas');
+const fs = require('fs');
 let monacoEditor;
 
 loader().then((monaco) => {
@@ -8,14 +9,14 @@ loader().then((monaco) => {
         language: "javascript",
         theme: 'vs-dark',
         automaticLayout: true,
-        value: "let help = 'me';"
+
+        // replace this with empty string, or some demo..
+        // make menu at top of program, like an examples tab.
+        value: `${fs.readFileSync(__dirname + '/examples/box.js')}` 
     }); 
-}).then(() => {  
+}).then(() => {
+    eval(monacoEditor.getValue())
     // need a way to access `monacoEditor` from outside this file.. (maybe)
     // exports.getValue = () => monacoEditor.getValue();
 
-    // this might be wrong / weird
-    let ctx = canvas.getContext('2d')
-    ctx.fillStyle = 'dodgerblue';
-    ctx.fillRect(50,50,50,50);
 });
