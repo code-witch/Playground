@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     display: inline-block;
-    border: black 2px solid;
+    border: white 2px solid;
     width: 650px;
     height: 700px;
 }

@@ -1,8 +1,8 @@
 // imports
 const { app, BrowserWindow } = require("electron");
 // my constants
-const width = 1400;
-const height = 700;
+const width = 1600;
+const height = 900;
 
 // window 
 let mainWindow;
@@ -11,13 +11,13 @@ let mainWindow;
 const start = () => {
     mainWindow = new BrowserWindow({
         title: 'Playground',
-        
-        minHeight: height,
-        maxHeight: height,
+        backgroundColor: '#222',
+        // minHeight: height,
+        // maxHeight: height,
         height: height,
         
-        minWidth: width,
-        maxWidth: width,
+        // minWidth: width,
+        // maxWidth: width,
         width: width,
 
         webPreferences: {
