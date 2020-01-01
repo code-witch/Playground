@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 #main-canvas {
     margin: 0;
     padding: 0;
     display: inline-block;
-    border: white 2px solid;
-    width: 49%;
+    width: 50%;
     height: 100%;
 }
 #container {
