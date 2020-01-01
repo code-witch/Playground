@@ -12,12 +12,12 @@ const start = () => {
     mainWindow = new BrowserWindow({
         title: 'Playground',
         backgroundColor: '#222',
-        // minHeight: height,
-        // maxHeight: height,
+        minHeight: height,
+        maxHeight: height,
         height: height,
         
-        // minWidth: width,
-        // maxWidth: width,
+        minWidth: width,
+        maxWidth: width,
         width: width,
 
         webPreferences: {
