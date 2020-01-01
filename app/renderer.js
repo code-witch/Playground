@@ -1,5 +1,4 @@
 const loader = require('monaco-loader');
-// const canvas = document.getElementById('main-canvas');
 const fs = require('fs');
 let monacoEditor;
 
